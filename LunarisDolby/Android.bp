@@ -34,12 +34,13 @@ android_app {
         "kotlinx-coroutines-core",
     ],
 
-    required: ["preinstalled-packages-platform-dolby.xml"],
+    required: ["LunarisDolbyPreinstalledPackages"],
 }
 
 prebuilt_etc {
-    name: "preinstalled-packages-platform-dolby.xml",
+    name: "LunarisDolbyPreinstalledPackages",
     src: "preinstalled-packages-platform-dolby.xml",
+    filename: "preinstalled-packages-platform-lunaris-dolby.xml",
     sub_dir: "sysconfig",
     system_ext_specific: true,
 }
